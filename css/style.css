@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/manrope');
+
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +26,12 @@ p {
 
 .light-grey {
   color: #737092;
+}
+
+.light-grey-opac {
+  color: #737092;
+  opacity: 0.7;
+  font-size: 18px;
 }
 
 .background-light-grey {
@@ -136,9 +144,17 @@ font-size: 0.9rem;
   z-index: 0;
 }
 
+.manrope{
+  font-family: 'Manrope', sans-serif ;
+}
+
 .banner {
   background-image: url("../Assets/Images/first-background.png");
   object-fit: cover;
+}
+
+.banner .container .row{
+  margin-left: 15px;
 }
 
 .banner1 {
@@ -151,6 +167,7 @@ font-size: 0.9rem;
 
 .banner1 h1{
   font-size: 4em;
+  margin-bottom: 0;
 }
 
 .banner1 p {
@@ -166,7 +183,7 @@ font-size: 0.9rem;
   color: #ffffff;
   background-color: #7166f5;
   border-radius: 10px;
-  padding: 15px;
+  padding: 12px 40px;
   border-style: none;
 }
 
@@ -201,7 +218,11 @@ font-size: 0.9rem;
   z-index: 4;
   border-radius: 20px;
   margin-bottom: -20px;
-  /* padding: 20px; */
+  padding: 10px;
+}
+
+.secondpg-second-card .card-body{
+  padding: 0;
 }
 
 .secondpg-second-card::before {
@@ -233,11 +254,19 @@ font-size: 0.9rem;
   margin-bottom: -20px;
 }
 
+.secondpg-third-card h5{
+  padding: 10px;
+}
+
 .secondpg-first-card {
   padding: 25px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   margin-bottom: -20px;
+}
+
+.secondpg-first-card h5{
+  padding: 10px;
 }
 
 /* .cards-section-margin {
@@ -357,6 +386,10 @@ li span {
   padding-bottom: 40px;
 }
 
+.about-us-icon-p{
+  padding-left: 20px;
+}
+
 .mid-about-us {
   gap: 3rem;
 }
@@ -390,6 +423,14 @@ li span {
   padding: 50px;
   border-radius: 10px;
   background: url("../Assets/Images/Mask\ Group.png") right bottom no-repeat;
+}
+
+.services-card .card span{
+  padding-top: 5px;
+}
+
+.services-card .card p{
+  padding-top: 20px;
 }
 
 .services .container .row .col-sm-4 .card {
@@ -465,19 +506,29 @@ li span {
 }
 .why-choose-us-card {
   background-color: rgb(255, 255, 255, 0.1);
-  width: 70%;
+  width: 85%;
   margin-top: 20px;
   padding: 20px;
   border-radius: 20px;
 }
 
+.why-choose-us-card span{
+  padding-right: 40px;
+}
+
 .why-choose-us-card-img{
   /* position: absolute; */
   margin-right: -5rem;
+  padding-left: 60px;
 }
 
 .why-choose-us-button {
   padding-top: 30px;
+}
+
+.why-choose-us-button span{
+  padding-top: 30px;
+  gap: 6rem;
 }
 
 .why-choose-us .container .row .col-6 button {
@@ -531,7 +582,7 @@ li span {
   background-image: url("../Assets/Images/testimonial-background.png");
   background-repeat: no-repeat;
   background-position: bottom right;
-  /* border-style: none; */
+  border-style: none;
 }
 
 .estimate {
